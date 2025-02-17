@@ -1,0 +1,176 @@
+version: '3.8'
+
+services:
+  # Eureka Server
+  eureka-server:
+    image: eureka-server:latest
+    container_name: eureka-server
+    build:
+      context: ./eurekaserver
+    ports:
+      - "8761:8761"
+    networks:
+      - eureka-network
+
+  # API Gateway
+  api-gateway:
+    build:
+      context: ./apigateway
+    image: api-gateway:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      - user-service
+      - product-service
+      - order-service
+      - payment-service
+    environment:
+      EUREKA_SERVER: "http://eureka-server:8761/eureka"
+    networks:
+      - eureka-network
+
+  # User Service
+  user-service:
+    build:
+      context: ./userservice
+    image: user-service:latest
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://user-db:3306/usersdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Ramu@8106
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: "true"
+      EUREKA_SERVER: "http://eureka-server:8761/eureka"
+    depends_on:
+      - user-db
+    networks:
+      - eureka-network
+
+  # Product Service
+  product-service:
+    build:
+      context: ./productservice
+    image: product-service:latest
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://product-db:3306/productdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Ramu@8106
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: "true"
+      EUREKA_SERVER: "http://eureka-server:8761/eureka"
+    depends_on:
+      - product-db
+    networks:
+      - eureka-network
+
+  # Order Service
+  order-service:
+    build:
+      context: ./orderservice
+    image: order-service:latest
+    ports:
+      - "8084:8084"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://order-db:3306/orderdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Ramu@8106
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: "true"
+      EUREKA_SERVER: "http://eureka-server:8761/eureka"
+    depends_on:
+      - order-db
+    networks:
+      - eureka-network
+
+  # Payment Service
+  payment-service:
+    build:
+      context: ./paymentservice
+    image: payment-service:latest
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://payment-db:3306/paymentsdb
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: Ramu@8106
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: "true"
+      SPRING_JPA_PROPERTIES_HIBERNATE_FORMAT_SQL: "true"
+      EUREKA_SERVER: "http://eureka-server:8761/eureka"
+    depends_on:
+      - payment-db
+    networks:
+      - eureka-network
+
+  # User Database
+  user-db:
+    image: mysql:8.0
+    container_name: user-db
+    environment:
+      MYSQL_ROOT_PASSWORD: Ramu@8106
+      MYSQL_DATABASE: usersdb
+    ports:
+      - "3307:3306"
+    volumes:
+      - user_db_data:/var/lib/mysql
+    networks:
+      - eureka-network
+
+  # Product Database
+  product-db:
+    image: mysql:8.0
+    container_name: product-db
+    environment:
+      MYSQL_ROOT_PASSWORD: Ramu@8106
+      MYSQL_DATABASE: productdb
+    ports:
+      - "3308:3306"
+    volumes:
+      - product_db_data:/var/lib/mysql
+    networks:
+      - eureka-network
+
+  # Order Database
+  order-db:
+    image: mysql:8.0
+    container_name: order-db
+    environment:
+      MYSQL_ROOT_PASSWORD: Ramu@8106
+      MYSQL_DATABASE: orderdb
+    ports:
+      - "3309:3306"
+    volumes:
+      - order_db_data:/var/lib/mysql
+    networks:
+      - eureka-network
+
+  # Payment Database
+  payment-db:
+    image: mysql:8.0
+    container_name: payment-db
+    environment:
+      MYSQL_ROOT_PASSWORD: Ramu@8106
+      MYSQL_DATABASE: paymentsdb
+    ports:
+      - "3310:3306"
+    volumes:
+      - payment_db_data:/var/lib/mysql
+    networks:
+      - eureka-network
+
+volumes:
+  user_db_data:
+  product_db_data:
+  order_db_data:
+  payment_db_data:
+
+networks:
+  eureka-network:
+    driver: bridge

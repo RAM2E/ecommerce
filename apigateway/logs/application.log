@@ -1,0 +1,143 @@
+2024-12-24 20:47:06 - Starting ApiGatewayApplication using Java 22.0.1 with PID 13096 (C:\Users\ediga\OneDrive\Documents\springboot\ecommerce\apigateway\target\classes started by ediga in C:\Users\ediga\OneDrive\Documents\springboot\ecommerce\apigateway)
+       2024-12-24 20:47:06 - No active profile set, falling back to 1 default profile: "default"
+       2024-12-24 20:47:08 - BeanFactory id=005ed6e6-793f-3fb7-8e25-7861a4dffc78
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [After]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Before]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Between]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Cookie]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Header]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Host]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Method]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Path]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Query]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [ReadBody]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [RemoteAddr]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [Weight]
+       2024-12-24 20:47:08 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+       2024-12-24 20:47:09 - Eureka HTTP Client uses RestTemplate.
+       2024-12-24 20:47:09 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+       2024-12-24 20:47:09 - Setting initial instance status as: STARTING
+       2024-12-24 20:47:09 - Initializing Eureka in region us-east-1
+       2024-12-24 20:47:09 - Resolving eureka endpoints via configuration
+       2024-12-24 20:47:09 - Disable delta property : false
+       2024-12-24 20:47:09 - Single vip registry refresh property : null
+       2024-12-24 20:47:09 - Force full registry fetch : false
+       2024-12-24 20:47:09 - Application is null : false
+       2024-12-24 20:47:09 - Registered Applications size is zero : true
+       2024-12-24 20:47:09 - Application version is -1: true
+       2024-12-24 20:47:09 - Getting all instance registry info from the eureka server
+       2024-12-24 20:47:09 - The response status is 200
+       2024-12-24 20:47:09 - Starting heartbeat executor: renew interval is: 30
+       2024-12-24 20:47:09 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+       2024-12-24 20:47:09 - Discovery Client initialized at timestamp 1735053429964 with initial instances count: 0
+       2024-12-24 20:47:09 - Registering application APIGATEWAY with eureka with status UP
+       2024-12-24 20:47:09 - Saw local status change event StatusChangeEvent [timestamp=1735053429969, current=UP, previous=STARTING]
+       2024-12-24 20:47:09 - DiscoveryClient_APIGATEWAY/ASUS.mshome.net:apigateway:8080: registering service...
+       2024-12-24 20:47:10 - DiscoveryClient_APIGATEWAY/ASUS.mshome.net:apigateway:8080 - registration status: 204
+       2024-12-24 20:47:10 - Netty started on port 8080 (http)
+       2024-12-24 20:47:10 - Updating port to 8080
+       2024-12-24 20:47:10 - Started ApiGatewayApplication in 3.841 seconds (process running for 4.47)
+       2024-12-24 20:47:39 - Disable delta property : false
+       2024-12-24 20:47:39 - Single vip registry refresh property : null
+       2024-12-24 20:47:39 - Force full registry fetch : false
+       2024-12-24 20:47:39 - Application is null : false
+       2024-12-24 20:47:39 - Registered Applications size is zero : true
+       2024-12-24 20:47:39 - Application version is -1: false
+       2024-12-24 20:47:39 - Getting all instance registry info from the eureka server
+       2024-12-24 20:47:40 - The response status is 200
+       2024-12-24 20:52:09 - Resolving eureka endpoints via configuration
+       2024-12-24 20:54:10 - Starting ApiGatewayApplication using Java 22.0.1 with PID 16032 (C:\Users\ediga\OneDrive\Documents\springboot\ecommerce\apigateway\target\classes started by ediga in C:\Users\ediga\OneDrive\Documents\springboot\ecommerce\apigateway)
+2024-12-24 20:54:10 - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 20:54:11 - BeanFactory id=005ed6e6-793f-3fb7-8e25-7861a4dffc78
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [After]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Before]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Between]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Cookie]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Header]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Host]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Method]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Path]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Query]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [ReadBody]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [RemoteAddr]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [Weight]
+2024-12-24 20:54:12 - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2024-12-24 20:54:12 - Eureka HTTP Client uses RestTemplate.
+2024-12-24 20:54:12 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-12-24 20:54:12 - Setting initial instance status as: STARTING
+2024-12-24 20:54:12 - Initializing Eureka in region us-east-1
+2024-12-24 20:54:12 - Resolving eureka endpoints via configuration
+2024-12-24 20:54:12 - Disable delta property : false
+2024-12-24 20:54:12 - Single vip registry refresh property : null
+2024-12-24 20:54:12 - Force full registry fetch : false
+2024-12-24 20:54:12 - Application is null : false
+2024-12-24 20:54:12 - Registered Applications size is zero : true
+2024-12-24 20:54:12 - Application version is -1: true
+2024-12-24 20:54:12 - Getting all instance registry info from the eureka server
+2024-12-24 20:54:13 - The response status is 200
+2024-12-24 20:54:13 - Starting heartbeat executor: renew interval is: 30
+2024-12-24 20:54:13 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-12-24 20:54:13 - Discovery Client initialized at timestamp 1735053853360 with initial instances count: 0
+2024-12-24 20:54:13 - Registering application APIGATEWAY with eureka with status UP
+2024-12-24 20:54:13 - Saw local status change event StatusChangeEvent [timestamp=1735053853364, current=UP, previous=STARTING]
+2024-12-24 20:54:13 - DiscoveryClient_APIGATEWAY/ASUS.mshome.net:apigateway:8080: registering service...
+2024-12-24 20:54:13 - DiscoveryClient_APIGATEWAY/ASUS.mshome.net:apigateway:8080 - registration status: 204
+2024-12-24 20:54:13 - Netty started on port 8080 (http)
+2024-12-24 20:54:13 - Updating port to 8080
+2024-12-24 20:54:13 - Started ApiGatewayApplication in 3.822 seconds (process running for 4.495)
+2024-12-24 20:54:43 - Disable delta property : false
+2024-12-24 20:54:43 - Single vip registry refresh property : null
+2024-12-24 20:54:43 - Force full registry fetch : false
+2024-12-24 20:54:43 - Application is null : false
+2024-12-24 20:54:43 - Registered Applications size is zero : true
+2024-12-24 20:54:43 - Application version is -1: false
+2024-12-24 20:54:43 - Getting all instance registry info from the eureka server
+2024-12-24 20:54:43 - The response status is 200
+2024-12-24 20:55:52 - [6a4e333c-1]  500 Server Error for HTTP GET "/api/users/123/orders"
+java.net.UnknownHostException: Failed to resolve 'ASUS.mshome.net' [A(1), AAAA(28)] after 8 queries 
+	at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1150)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/api/users/123/orders" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at io.netty.resolver.dns.DnsResolveContext.finishResolve(DnsResolveContext.java:1150)
+		at io.netty.resolver.dns.DnsResolveContext.tryToFinishResolve(DnsResolveContext.java:1097)
+		at io.netty.resolver.dns.DnsResolveContext.query(DnsResolveContext.java:455)
+		at io.netty.resolver.dns.DnsResolveContext.onResponse(DnsResolveContext.java:686)
+		at io.netty.resolver.dns.DnsResolveContext.access$500(DnsResolveContext.java:70)
+		at io.netty.resolver.dns.DnsResolveContext$2.operationComplete(DnsResolveContext.java:513)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+		at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+		at io.netty.resolver.dns.DnsQueryContext.trySuccess(DnsQueryContext.java:308)
+		at io.netty.resolver.dns.DnsQueryContext.finishSuccess(DnsQueryContext.java:299)
+		at io.netty.resolver.dns.DnsNameResolver$DnsResponseHandler.channelRead(DnsNameResolver.java:1491)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioMessageChannel$NioMessageUnsafe.read(AbstractNioMessageChannel.java:97)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN
+	at io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source)
